@@ -1,8 +1,8 @@
+//Check if localstorage is supported by the browser
 if(localStorage !== null){
-    
-    //INIT - remember this function is called automatically so it initializes everything
+    //Init
     var storage = (function(){
-         //cacheDOM - FIND THE ELEMENTS
+         //cacheDOM
         var $container = $(".container");
         var $clickMe = $container.find("#clickMe");
         var $instructions = $container.find("#instructions");
@@ -13,6 +13,7 @@ if(localStorage !== null){
         
         //RENDER
         function render(){
+            //Retrieve localStorage and apply it to the input values
             txtName.val(localStorage.getItem('name'));
             txtEmail.val(localStorage.getItem('email'));
             txtIdea.val(localStorage.getItem('idea'));
@@ -31,14 +32,18 @@ if(localStorage !== null){
         }
     
         function updateLocalStorage(){
-            //make sure to match the storage name and html attribute name, otherwise this won't work
+            //make sure to match the storage and html attribute name, otherwise this won't work
             var storageName = this.name;
             var value = $(this).val();
             console.log(storageName);
             localStorage.setItem(storageName, value);
         }
-            
+        
+        //PUBLIC APIs
+        return {
+            toggleInstructions: toggleInstructions
+        }
     })()
 } else {
-    console.log("SORRY, something went wront! :-O :-)");
+    console.log("Sorry, your browser doesn't support local storage.");
 }

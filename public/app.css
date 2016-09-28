@@ -1,31 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700';
-
+/* Global */
 body {
     background-color: #c3c3c3;
 }
 
-div.ui.text.container{
-    -webkit-box-shadow: -2px 0px 16px 2px rgba(83,122,110,1);
-    -moz-box-shadow: -2px 0px 16px 2px rgba(83,122,110,1);
-    box-shadow: -2px 0px 16px 2px rgba(83,122,110,1);
-}
-
-div.ui.text.container{
-    color: #FFF;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    background-color: #1AB188;
-}
-
-div.ui.text.container div.container {
-    margin: 0 5%;
-}
-
-div.ui.text.container div.container #instructions {
-    display: none;
-}
-
+/*Multiple Elements*/
 div.ui.text.container > h1,
 .ui.segment div.field label,
 button.ui.center.button{
@@ -37,6 +16,24 @@ button.ui.center.button{
     font-size: 18px;
 }
 
+/* Text Container */
+div.ui.text.container{
+    color: #FFF;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background-color: #1AB188;
+    
+    -webkit-box-shadow: -2px 0px 16px 2px rgba(83,122,110,1);
+    -moz-box-shadow: -2px 0px 16px 2px rgba(83,122,110,1);
+    box-shadow: -2px 0px 16px 2px rgba(83,122,110,1);
+}
+
+/*Header and Instructions*/
+div.ui.text.container div.container {
+    margin: 0 5%;
+}
+
 div.ui.text.container > h1{
     font-size: 45px;
     font-weight: 700;
@@ -46,6 +43,11 @@ div.ui.text.container > h1{
     color: #000;
 }
 
+div.ui.text.container div.container #instructions {
+    display: none;
+}
+
+/* Form */
 ui.form{
     border-radius: 0px;
 }

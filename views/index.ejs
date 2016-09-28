@@ -12,7 +12,9 @@
 	    <div class="container">
 	    	<div id="clickMe">What is this? (click me)</div>
 	        <p id="instructions">This form demonstrates local storage with html5, form layout with Semantic UI,  some basic Jquery and hopefully a color scheme that works.
-	        Feel free to type some text in and close or refresh the tab. Your non-confidential info will still be there.  :)</p> </p>
+	        Feel free to type some text in and close or refresh the tab. Your non-confidential info will still be there.  :)<br>The storage module is also made using a 
+	        revealing model pattern. The function storage.toggleInstructions() is the only method available through the developer terminal.
+	        Source code for this is also on Github <a target="_blank" href="https://github.com/alexr101/web-storage-form">here</a></p> </p>
 	    </div>
 	    <form id="storage-form" class="ui form">
     	    <div class="ui segment">
@@ -26,12 +28,10 @@
                 	    <input type="text" id="email" name="email"/>
                 	</div>
                 </div>
-                
                 <div class="field">
-            	        <label for="password">Password</label>
-            	        <input type="password" id="password" name="password"/>
-            	    </div>
-            	
+        	        <label for="password">Password</label>
+        	        <input type="password" id="password" name="password"/>
+        	    </div>
         	    <div class="field">
         	        <label for="idea">The data you want in Local Storage!</label>
         	        <textarea rows="4" id="idea" name="idea"/></textarea>
@@ -42,9 +42,7 @@
     	    </div>
     	</form>
     </div>
-    
     <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
     <script src="/local-storage.js"></script>
-
 </body>
 </html>
