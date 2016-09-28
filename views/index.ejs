@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Web Storage API</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="/app.css"></link>
+</head>
+<body>
+    <div id="form-page" class="ui text container">
+	    <h1>Web Storage API</h1>
+	    <div class="container">
+	    	<div id="clickMe">What is this? (click me)</div>
+	        <p id="instructions">This form demonstrates local storage with html5, form layout with Semantic UI,  some basic Jquery and hopefully a color scheme that works.
+	        Feel free to type some text in and close or refresh the tab. Your non-confidential info will still be there.  :)</p> </p>
+	    </div>
+	    <form id="storage-form" class="ui form">
+    	    <div class="ui segment">
+    	        <div class="two fields">
+            	    <div class="field">
+            	        <label for="name">Name</label>
+            	        <input type="text" id="name" name="name"/>
+            	    </div>
+            	    <div class="field">
+                	    <label for="email">Email</label>
+                	    <input type="text" id="email" name="email"/>
+                	</div>
+                </div>
+                
+                <div class="field">
+            	        <label for="password">Password</label>
+            	        <input type="password" id="password" name="password"/>
+            	    </div>
+            	
+        	    <div class="field">
+        	        <label for="idea">The data you want in Local Storage!</label>
+        	        <textarea rows="4" id="idea" name="idea"/></textarea>
+        	    </div>
+        	    <div id="submit-button">
+        	        <button class="ui center button">Submit</button> 
+        	    </div>
+    	    </div>
+    	</form>
+    </div>
+    
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="/local-storage.js"></script>
+
+</body>
+</html>
